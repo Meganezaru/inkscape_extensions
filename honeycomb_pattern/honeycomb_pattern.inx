@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Honeycomb Pattern</name>
+    <id>com.example.honeycomb_pattern</id>
+    <param name="width" type="int" min="100" max="1000" gui-text="Width:">100</param>
+    <param name="height" type="int" min="100" max="1000" gui-text="Height:">100</param>
+    <param name="hex_size" type="int" gui-text="Hexagon Size:" >20</param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Render"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">honeycomb_pattern.py</command>
+    </script>
+</inkscape-extension>
