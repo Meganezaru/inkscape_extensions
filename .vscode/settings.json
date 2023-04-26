@@ -1,0 +1,13 @@
+{
+    "python.autoComplete.extraPaths": [
+
+        "C:\\Program Files\\Inkscape\\share\\inkscape\\extensions"
+
+    ],
+
+    "python.analysis.extraPaths": [
+
+        "C:\\Program Files\\Inkscape\\share\\inkscape\\extensions"
+
+    ] 
+}

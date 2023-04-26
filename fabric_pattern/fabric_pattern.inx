@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Fabric Pattern</name>
+    <id>com.example.fabric_pattern</id>
+    <param name="width" type="float" min="100" max="1000" gui-text="Width:"/>
+    <param name="height" type="float" min="100" max="1000" gui-text="Height:"/>
+    <param name="thick" type="float" gui-text="Pattern thick:" >1</param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Render"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">fabric_pattern.py</command>
+    </script>
+</inkscape-extension>
