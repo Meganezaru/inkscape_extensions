@@ -62,7 +62,7 @@ class FabricPattern(inkex.EffectExtension):
                     y += item_size / 2
                 
                 polyline = inkex.PathElement()
-                polyline.style = inkex.Style(stroke="#000000", fill="none", stroke_width="1", vector_effect="non-scaling-stroke")
+                polyline.style = inkex.Style(stroke="#000000", fill="none", stroke_width="1", vector_effect="non-scaling-stroke", _inkscape_stroke="hairline")
                 polyline.path = self.create_fabric_edges(x, y, thick, y == 0, y == (row_count - 1) * item_size, x == 0, x == (col_count - 1) * (item_size / 2))
                 self.svg.get_current_layer().append(polyline)
 

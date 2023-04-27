@@ -45,7 +45,7 @@ class HoneycombPattern(inkex.EffectExtension):
                     y += hex_height * 0.5
                 
                 polyline = inkex.PathElement()
-                polyline.style = inkex.Style(stroke="#000000", fill="none", stroke_width="1", vector_effect="non-scaling-stroke")
+                polyline.style = inkex.Style(stroke="#000000", fill="none", stroke_width="1", vector_effect="non-scaling-stroke", _inkscape_stroke="hairline")
                 polyline.path = self.create_hexagon_edges(x, y, hex_size)
                 self.svg.get_current_layer().append(polyline)
 
