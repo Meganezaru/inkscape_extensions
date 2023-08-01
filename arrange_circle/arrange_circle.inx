@@ -1,50 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<inkscape-extension
-    id="com.example.arrange_circles"
-    name="Arrange Circles"
-    menu="Extensions"
-    verb="ArrangeCircles"
-    about="Arrange circles in a grid pattern"
-    version="1.0"
-    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
->
-    <inkscape:menu-item
-        id="ArrangeCirclesMenuItem"
-        label="Arrange Circles"
-        verb="ArrangeCircles"
-    />
-
-    <inkscape:parameter
-        id="rows"
-        type="integer"
-        name="Rows"
-        min="1"
-        max="50"
-        value="5"
-    />
-    <inkscape:parameter
-        id="columns"
-        type="integer"
-        name="Columns"
-        min="1"
-        max="50"
-        value="5"
-    />
-    <inkscape:parameter
-        id="circle_size"
-        type="float"
-        name="Circle Size"
-        min="5.0"
-        max="100.0"
-        value="20.0"
-    />
-    <inkscape:parameter
-        id="spacing"
-        type="float"
-        name="Spacing"
-        min="1.0"
-        max="50.0"
-        value="5.0"
-    />
-
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Create Circles</name>
+  <id>org.inkscape.effect.createcircles</id>
+  <effect>
+    <object-type>all</object-type>
+  </effect>
+  <script>
+    <command reldir="extensions" interpreter="python">create_circles.py</command>
+  </script>
+  <param name="rows" type="int" min="1" max="100" _gui-text="Rows:">5</param>
+  <param name="cols" type="int" min="1" max="100" _gui-text="Columns:">5</param>
+  <param name="diameter" type="int" min="1" max="100" _gui-text="Diameter:">10</param>
+  <param name="space" type="int" min="0" max="100" _gui-text="Space:">5</param>
 </inkscape-extension>
